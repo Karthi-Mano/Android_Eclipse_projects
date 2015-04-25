@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_color">#04506C</color>
+    <color name="btn_bg_color">#FFFF05</color>
+    <color name="separator">#4E9288</color>
+    <color name="dialog_bg">#FE8B02</color>
+
+</resources>

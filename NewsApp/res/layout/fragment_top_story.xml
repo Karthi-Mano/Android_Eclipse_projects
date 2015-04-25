@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4" >
+
+    <ListView
+        android:id="@+id/fragment_to_story_listStories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:listSelector="@null"
+        android:divider="@android:color/transparent"
+        android:padding="5dp" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/fragment_top_story_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/home_icon" />
+
+    <LinearLayout
+        android:id="@+id/activity_sign_up_options_linContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSignUpWithFB"
+            android:text="@string/activity_sign_up_options_btnSignUpFB" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickSignUpWithEmail"
+            android:text="@string/activity_sign_up_options_btnSignUpEmail" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_sign_up_options_txtAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_sign_up_options_linContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="onClicGoToSignIn"
+        android:text="@string/activity_sign_up_options_already_registered"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:padding="10dp"
+    tools:context="com.android.assignment2.ActivityA"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/activity_main_imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/founding" />
+
+        <TextView
+            android:id="@+id/activity_main_txtTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/activity_main_imgLogo"
+            android:text="@string/activitya"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_main_relTop"
+        android:layout_marginTop="40dp" >
+
+        <Button
+            android:id="@+id/activity_main_btnStartB"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/btn_bg_color"
+            android:onClick="onClickStartB"
+            android:text="@string/start_activityB"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/activity_main_btnDialog"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/btn_bg_color"
+            android:onClick="onClickOpenDialog"
+            android:text="@string/dialog"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_main_txtCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_main_relButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/thread_counter"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/activity_main_linSep"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/activity_main_txtCounter"
+        android:layout_marginTop="40dp"
+        android:background="@color/separator"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_main_btnClose"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/activity_main_linSep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/black"
+        android:onClick="onClickCloseApp"
+        android:text="@string/close_app"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg">#EEEEEE</color>
+    <color name="topbar">#3367D6</color>
+    <color name="button_bg_pressed">#3367D6</color>
+    <color name="button_bg_normal">#4285F4</color>
+
+</resources>

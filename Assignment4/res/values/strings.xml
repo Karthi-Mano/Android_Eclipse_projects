@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Assignment4</string>
+    <!-- main_activity.xml -->
+    <string name="activitya">Android Data Storage Example</string>
+    <string name="prefernces">Preferences</string>
+    <string name="sqlite">Sqlite</string>
+    <string name="close">Close</string>
+
+    <!-- activity_sqlite.xml -->
+    <string name="activity_sqlite_title">Sqlite View</string>
+    <string name="activity_sqlite_message_title">Blog Message</string>
+    <string name="activity_sqlite_message_hint">Maximum 255 charcters only</string>
+    <string name="activity_sqlite_save">Save</string>
+    <string name="activity_sqlite_cancel">Cancel</string>
+
+    <!-- activity_prefernce_storage.xml -->
+    <string name="activity_prefernce_storage_title">Preference Storage View</string>
+    <string name="activity_prefernce_storage_book_name">Android Book Name</string>
+    <string name="activity_prefernce_storage_max_70">Maximum 70 Charcters</string>
+    <string name="activity_prefernce_storage_book_author">Android Book Author</string>
+    <string name="activity_prefernce_storage_desc">Description</string>
+
+    <!-- prefs_strings -->
+    <string name="prefs_count">PREFS_COUNT</string>
+    <string name="prefs_book_name">PREFS_BOOK_NAME</string>
+    <string name="prefs_timestamp">PREFS_TIMESTAMP</string>
+    <string name="prefs_book_author">PREFS_BOOK_AUTHOR</string>
+    <string name="prefs_description">PREFS_DESCRIPTION</string>
+
+</resources>

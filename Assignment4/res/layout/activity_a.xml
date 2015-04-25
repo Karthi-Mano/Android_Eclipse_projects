@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:padding="10dp"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/activity_main_imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/founding" />
+
+        <TextView
+            android:id="@+id/activity_main_txtTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/activity_main_imgLogo"
+            android:text="@string/activitya"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_linButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_main_relTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/activity_main_btnPref"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickPref"
+            android:text="@string/prefernces" />
+
+        <Button
+            android:id="@+id/activity_main_btnSqlite"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickSqlite"
+            android:text="@string/sqlite" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_main_btnClose"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickClose"
+        android:text="@string/close" />
+
+    <TextView
+        android:id="@+id/activity_main_txtData"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/activity_main_btnClose"
+        android:layout_below="@id/activity_main_linButtons"
+        android:padding="10dp" />
+
+</RelativeLayout>

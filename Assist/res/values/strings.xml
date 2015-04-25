@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Assist</string>
+    <!-- activity_sign_up_options.xml -->
+    <string name="activity_sign_up_options_btnSignUpFB">Sign up with Facebook</string>
+    <string name="activity_sign_up_options_btnSignUpEmail">Sign up with Email</string>
+    <string name="activity_sign_up_options_already_registered"><u>Already have an Account?</u></string>
+
+    <!-- activity_register.xml -->
+    <string name="activity_register_firstname">First Name</string>
+    <string name="activity_register_lastname">Last Name</string>
+    <string name="activity_register_email">Email Id</string>
+    <string name="activity_register_phoneNo">Contact No.</string>
+    <string name="activity_register_password">Password</string>
+    <string name="activity_register_btnRegister">Register</string>
+
+    <!-- activity_find_store.xml -->
+    <string name="activity_find_store_txtFindStore">Find Store</string>
+
+    <!-- activity_search_result.xml -->
+
+    <string name="activity_search_result_txtBestBuy">Best Buy</string>
+
+    <!-- activity_friend_list.xml -->
+    <string name="activity_friend_list_btnBroadcast">Broadcast</string>
+
+    <!-- activity_send_message.xml -->
+    <string name="activity_send_message_txtMessage">Message : </string>
+    <string name="activity_send_message_txtStoreDetail">Store Details : </string>
+    <string name="activity_send_message_btnSend">Send</string>
+
+    <!-- activity_message.xml -->
+
+    <string name="activity_message_btnAccept">Accept</string>
+    <string name="activity_message_btnReject">Reject</string>
+
+</resources>

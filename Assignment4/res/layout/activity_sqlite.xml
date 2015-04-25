@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:padding="10dp"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/activity_sqlite_relTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/activity_sqlite_imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/founding" />
+
+        <TextView
+            android:id="@+id/activity_sqlite_txtTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/activity_sqlite_imgLogo"
+            android:text="@string/activity_sqlite_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_sqlite_lingBlog"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/activity_sqlite_relTop"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/activity_sqlite_message_title"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/activity_sqlite_edtBlog"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="top"
+            android:hint="@string/activity_sqlite_message_hint"
+            android:maxLength="255"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_linBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_sqlite_lingBlog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/activity_sqlite_btnSave"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSave"
+            android:text="@string/activity_sqlite_save" />
+
+        <Button
+            android:id="@+id/activity_main_btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickCancel"
+            android:text="@string/activity_sqlite_cancel" />
+    </LinearLayout>
+
+</RelativeLayout>
